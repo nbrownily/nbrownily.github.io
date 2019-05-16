@@ -1,0 +1,116 @@
+<!Doctype html>
+<!-- Nathan's CWB205 formval project-->
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>205 -Form Validation</title>
+<link href="tempcss/205temp.css" rel="stylesheet" type="text/css" />
+<link href="tempcss/formval.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../_js/jquery.min.js"></script>
+<script src="jquery_validate/jquery.validate.min.js"></script>
+<script>
+$(document).ready(function() {
+  // focus first field
+  $('#fname').focus();
+//ccc##
+  $('#order_form').validate({
+   rules: {
+     email: {
+        required: true,
+        email: true
+     },
+     quant: {
+        max: 4,
+        min: 1
+     }
+   }, //end rules
+   messages: {
+      email: {
+         required: "Please put in an e-mail address.",
+         email: "This is not a valid email address."
+       }
+   }
+  }); // end validate
+}); // end ready
+</script>
+
+</head>
+
+<body>
+<div id="holder">
+<div id="heading">
+<h1>CWB205 Projects</h1>
+</div><!--end heading -->
+
+<div id="prj">
+<h3>Form Validation</h3>
+</div><!-- end prj -->
+<div id="main_content">
+<h2>Workshop Registration</h2>
+<form action="thanks.html" method="post"  id="order_form">
+
+<fieldset>
+<legend>Contact Information</legend>
+<div>
+<label for="fname" class="label">First Name</label><input name="fname" type="text" class="required" id="fname" title="Please type your first name."></div>
+<div><label for="lname" class="label">Last Name</label><input name="lname" type="text" class="required" id="lname" title="Please type your last name."></div>
+<div><label for="street" class="label">Street</label><input name="street" type="text" class="required" id="street" title="Please type your address."></div>
+<div><label for="city" class="label">City</label><input name="city" type="text" class="required" id="city" title="Please type your city."></div>
+<div><label for="state" class="label">State</label><input name="state" type="text" class="required" id="state" value="CO" title="Please type your state."></div>
+<div><label for="zip" class="label">Zip Code</label><input name="zip" type="text" class="required" id="zip" title="Please type your zip code."></div>
+<div><label for="phone" class="label">Phone #</label><input name="phone" type="text" class="required" id="phone" title="Please type your phone number."></div>
+<div><label for="email" class="label">E-mail</label><input name="email" type="text" id="email"></div>
+</fieldset>
+
+
+<fieldset>
+<legend>Register for workshop</legend>
+
+<div><label for="quant" class="label">Quantity</label><input name="quant" type="text" class="required" id="quant"  size="3"/></div>
+<div><label for="price" class="label">Price<span class="smaller"> </span></label><input disabled="disabled" type="text" name="price" id="price" placeholder="$25/each"/></div>
+<div><label for="slstax" class="label">Sales Tax</label><input disabled="disabled" type="text" name="slstax" id="slstax"  /></div>
+<div><label for="total" class="label">Total&nbsp;&#36;</label><input disabled="disabled" type="text" name="total" id="total"  /><span id="bid"></span></div>
+
+</fieldset>
+<input type="submit" value="Order" />
+<input type="reset" value="Clear Form" />
+</form>
+
+<script>
+  $("#quant").blur(function() {
+    var quantity = document.getElementById("quant").value;
+
+    var quant = Number(quantity); //convert original input to number
+    console.log(quant)
+
+  //Tax and Price Operators
+    let p = 25;
+    let t = 0.065;
+
+    let priceAmount = quant * 25;
+    console.log(priceAmount)
+    let taxAmount = priceAmount * 0.065;
+
+    var price = priceAmount.toFixed(2);
+    var tax = taxAmount.toFixed(2);
+
+    document.getElementById("slstax").value = tax;
+    document.getElementById("price").value = price;
+
+  //Total Operator
+    let totalAmount = priceAmount + taxAmount;
+
+    var total = totalAmount.toFixed(2);
+
+    document.getElementById("total").value = total;
+
+  });
+</script>
+
+</div><!-- end main_content -->
+<div id="foot">
+<div >&copy; <script>document.write(new Date().getFullYear())</script> Aims Community College</div>
+</div><!-- end foot -->
+</div><!-- end holder -->
+</body>
+</html>
