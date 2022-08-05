@@ -11,7 +11,11 @@
 @import "./home.css";
 
 nav {
-  padding: 0 40px;
+  height: 101px;
+  background: #fff;
+  border-bottom: 2px solid #edeff2;
+  padding: 20px 40px;
+  max-width: 1920px;
 }
 
 .page-padding {
