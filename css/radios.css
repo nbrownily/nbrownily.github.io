@@ -1,0 +1,36 @@
+input[type="radio"] {
+  /* Ellipse 2 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  /* UI/1 */
+
+  background: #2b2e33;
+  /* UI/2 */
+
+  border: 2px solid #919499;
+}
+input[type="radio"]:checked {
+  /* Ellipse 2 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  /* UI/6 */
+
+  background: #ffffff;
+  /* UI/6 */
+
+  border: 2px solid #ffffff;
+}
