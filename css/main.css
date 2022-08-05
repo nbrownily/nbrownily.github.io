@@ -5,6 +5,7 @@
 @import "./links.css";
 @import "./inputs.css";
 @import "./headings.css";
+@import "./lists.css";
 @import "./helper.css";
 
 /* Pages */
@@ -14,8 +15,12 @@ nav {
   height: 101px;
   background: #fff;
   border-bottom: 2px solid #edeff2;
+}
+
+nav > div {
   padding: 20px 40px;
   max-width: 1920px;
+  margin: auto;
 }
 
 .page-padding {
@@ -67,6 +72,17 @@ img {
   .grid-four {
     grid-template-columns: 1fr 1fr;
   }
+
+  .hero-float-container {
+    position: relative;
+    padding: 32px;
+    margin: -64px auto 0 auto;
+    max-width: 90%;
+  }
+
+  .hero-shadow {
+    margin: -100px -40px 0 -40px;
+  }
 }
 
 /* Tablet Media Query */
@@ -99,11 +115,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .hero-float-container {
-    position: relative;
-    padding: 32px;
-    margin: -64px auto 0 auto;
-    max-width: 90%;
+  .hero-shadow {
+    margin: -100px -20px 0 -20px;
   }
 
   .floor-plan-numbers {

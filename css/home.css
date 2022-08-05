@@ -1,23 +1,7 @@
-.container-footer {
-  margin: auto;
-  text-align: center;
-}
-
-.container-footer div {
-  margin: auto;
-  max-width: 674px;
-}
-
-.container-footer-shadow {
-  margin: -10rem 0;
-  height: 200px;
-  width: 100%;
-}
-
-.container-footer-nav {
-  border-top: solid 1px #616366;
-  padding: 2rem 0;
-  margin-bottom: 0;
+/* Hero Section */
+.hero-image img {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-float-container {
@@ -31,8 +15,20 @@
 
   padding: 64px;
   max-width: 496px;
+  z-index: 2;
 }
 
+.hero-shadow {
+  background-color: #e5e5e5;
+
+  margin: -200px -80px 0 -80px;
+  height: 120px;
+  width: 100vw;
+
+  z-index: 0;
+}
+
+/* Floor Plan Section */
 .container-floor-plans {
   max-width: 1100px;
 }
@@ -69,4 +65,27 @@
 
   /* Content/2 */
   color: #616366;
+}
+
+/* Footer Section */
+.container-footer {
+  margin: auto;
+  text-align: center;
+}
+
+.container-footer div {
+  margin: auto;
+  max-width: 674px;
+}
+
+.container-footer-shadow {
+  margin: -10rem 0;
+  height: 200px;
+  width: 100%;
+}
+
+.container-footer-nav {
+  border-top: solid 1px #616366;
+  padding: 2rem 0;
+  margin-bottom: 0;
 }
