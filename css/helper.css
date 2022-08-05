@@ -1,0 +1,103 @@
+/* Container Helper Classes */
+.relative {
+  position: relative;
+}
+
+.container {
+  margin: 4rem auto;
+}
+
+.container-xl {
+  max-width: 1920px;
+}
+
+.container-lg {
+  max-width: 1800px;
+}
+
+.container-md {
+  max-width: 1330px;
+}
+
+/* Layout Helper Classes */
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.grid-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid-third {
+  display: grid;
+  grid-template-columns: 1fr 1fr 218px;
+  gap: 2rem;
+}
+
+.grid-four {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Spacing Helper Classes */
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-6 {
+  padding: 4rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mt-6 {
+  margin-top: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 2rem;
+}
+
+/* Misc Helper Classes */
+.bg-white {
+  background-color: #fff;
+}
+.bg-gray {
+  background-color: #2b2e33;
+}
+
+.rounded {
+  border-radius: 3px;
+}

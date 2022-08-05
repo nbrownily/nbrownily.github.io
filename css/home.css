@@ -1,0 +1,70 @@
+.container-footer {
+  margin: auto;
+  text-align: center;
+}
+
+.container-footer div {
+  margin: auto;
+  max-width: 674px;
+}
+
+.container-footer-shadow {
+  margin: -10rem 0;
+  height: 200px;
+  width: 100%;
+}
+
+.container-footer-nav {
+  border-top: solid 1px #616366;
+  padding: 2rem 0;
+  margin-bottom: 0;
+}
+
+.hero-float-container {
+  background-color: white;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+
+  padding: 64px;
+  max-width: 496px;
+}
+
+.container-floor-plans {
+  max-width: 1100px;
+}
+
+.floor-plan-numbers {
+  display: grid;
+  grid-template-columns: 112px 112px 112px 112px;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+.floor-plan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 80px;
+
+  /* Content/2 */
+  color: #222426;
+  text-align: center;
+
+  width: 112px;
+}
+
+.floor-plan > span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  /* Content/2 */
+  color: #616366;
+}
