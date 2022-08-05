@@ -1,0 +1,55 @@
+/* Misc/Nav */
+a {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  /* Content/2 */
+  border-radius: 3px;
+  color: #616366;
+}
+
+a:hover {
+  /* Content/1 */
+  color: #222426;
+}
+
+a:focus,
+a:active {
+  border: solid 1px #222426;
+  color: #222426;
+}
+
+/* Misc/Footer */
+footer a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  /* Content/3 */
+  color: #9da1a6;
+  border-right: solid 1px #9da1a6;
+  border-radius: 0;
+
+  padding-right: 1rem;
+}
+footer a:hover {
+  /* Content/4 */
+  color: white;
+}
+
+footer a:focus,
+footer a:active {
+  /* Content/4 */
+  border: solid 1px white;
+  border-radius: 3px;
+  color: white;
+}

@@ -1,0 +1,57 @@
+.heading-1 {
+  /* Header/H1/Desktop */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+
+  /* Content/1 */
+  color: #222426;
+}
+
+.heading-2 {
+  /* Body/Label/Desktop */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  /* Content/On UI */
+  color: #1160e9;
+}
+
+.heading-3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  /* or 120% */
+
+  /* Content/1 */
+  color: #222426;
+}
+
+.heading-4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  /* Content/1 */
+  color: #222426;
+}
+
+.heading-5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  /* Content/4 */
+  color: #ffffff;
+}

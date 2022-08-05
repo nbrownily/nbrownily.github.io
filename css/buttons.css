@@ -1,8 +1,8 @@
+/* Button Container */
 button {
-  /* Button Container */
+  cursor: pointer;
 
   /* Auto layout */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,82 +10,32 @@ button {
   padding: 16px 24px;
   gap: 8px;
 
-  width: 150px;
-  height: 56px;
+  min-width: 150px;
+  min-height: 56px;
 
   /* Brand/Default */
-
   background: #1160e9;
+  border: none;
   border-radius: 2px;
+  color: #fff;
 
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  /* Title case */
+  text-transform: capitalize;
 }
 
-button:hover {
-  /* Button Container */
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
-  gap: 8px;
-
-  width: 150px;
-  height: 56px;
-
-  /* Brand/Default */
-
-  background: #1160e9;
-  border-radius: 2px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
+/* Button Container Hover */
+button:hover,
 button:focus,
 button:active {
-  /* Button Container */
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
-  gap: 8px;
-
-  width: 150px;
-  height: 56px;
-
   /* Brand/Hover */
-
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #115be9;
   border-radius: 2px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
+/* Email Button Container */
 button.email {
-  /* Button Container */
-
   /* Auto layout */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -108,23 +58,9 @@ button.email {
   flex-grow: 0;
 }
 
+/* Button Container */
 button.email:hover {
-  /* Button Container */
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
-  gap: 8px;
-
-  width: 173px;
-  height: 48px;
-
   /* Brand/Hover */
-
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #115be9;
   /* Shadow/Medium/Brand */
@@ -140,24 +76,10 @@ button.email:hover {
   flex-grow: 0;
 }
 
+/* Button Container */
 button.email:focus,
 button.email:active {
-  /* Button Container */
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
-  gap: 8px;
-
-  width: 173px;
-  height: 48px;
-
   /* Brand/Hover */
-
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #115be9;
   border-radius: 2px;
